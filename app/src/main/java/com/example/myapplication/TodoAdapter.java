@@ -37,8 +37,8 @@ public class TodoAdapter extends ArrayAdapter<Todo> {
         tv.setText(items.get(position).getName());
         TextView des = row.findViewById(R.id.rowDes);
         des.setText(items.get(position).getDescription());
-//        ImageView im = row.findViewById(R.id.imageView);
-//        im.setImageResource(items.get(position).getIconIndex());
+        ImageView im = row.findViewById(R.id.imageView);
+        im.setImageResource(items.get(position).getIconIndex());
 
         return row;
     }

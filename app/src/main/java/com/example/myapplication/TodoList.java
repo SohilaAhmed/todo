@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -31,26 +32,26 @@ public class TodoList extends AppCompatActivity {
 
         listNumbers = findViewById(R.id.list);
         todos = new ArrayList<Todo>();
-        todos.add(new Todo("1", "description 1"));
-        todos.add(new Todo("2", "description 2"));
-        todos.add(new Todo("3", "description 3"));
-        todos.add(new Todo("4", "description 4"));
-        todos.add(new Todo("5", "description 5"));
-        todos.add(new Todo("6", "description 6"));
-        todos.add(new Todo("7", "description 7"));
-        todos.add(new Todo("8", "description 8"));
-        todos.add(new Todo("9", "description 9"));
-        todos.add(new Todo("10", "description 10"));
-        todos.add(new Todo("11", "description 11"));
-        todos.add(new Todo("12", "description 12"));
-        todos.add(new Todo("13", "description 13"));
-        todos.add(new Todo("14", "description 14"));
-        todos.add(new Todo("15", "description 15"));
-        todos.add(new Todo("16", "description 16"));
-        todos.add(new Todo("17", "description 17"));
-        todos.add(new Todo("18", "description 18"));
-        todos.add(new Todo("19", "description 19"));
-        todos.add(new Todo("20", "description 20"));
+        todos.add(new Todo("1", "description 1", android.R.drawable.checkbox_on_background));
+        todos.add(new Todo("2", "description 2", android.R.drawable.checkbox_on_background));
+        todos.add(new Todo("3", "description 3", android.R.drawable.checkbox_on_background));
+        todos.add(new Todo("4", "description 4", android.R.drawable.checkbox_on_background));
+        todos.add(new Todo("5", "description 5", android.R.drawable.checkbox_on_background));
+        todos.add(new Todo("6", "description 6", android.R.drawable.checkbox_off_background));
+        todos.add(new Todo("7", "description 7", android.R.drawable.checkbox_on_background));
+        todos.add(new Todo("8", "description 8", android.R.drawable.checkbox_on_background));
+        todos.add(new Todo("9", "description 9", android.R.drawable.checkbox_off_background));
+        todos.add(new Todo("10", "description 10", android.R.drawable.checkbox_on_background));
+        todos.add(new Todo("11", "description 11", android.R.drawable.checkbox_on_background));
+        todos.add(new Todo("12", "description 12", android.R.drawable.checkbox_on_background));
+        todos.add(new Todo("13", "description 13", android.R.drawable.checkbox_on_background));
+        todos.add(new Todo("14", "description 14", android.R.drawable.checkbox_on_background));
+        todos.add(new Todo("15", "description 15", android.R.drawable.checkbox_on_background));
+        todos.add(new Todo("16", "description 16", android.R.drawable.checkbox_on_background));
+        todos.add(new Todo("17", "description 17", android.R.drawable.checkbox_on_background));
+        todos.add(new Todo("18", "description 18", android.R.drawable.checkbox_on_background));
+        todos.add(new Todo("19", "description 19", android.R.drawable.checkbox_on_background));
+        todos.add(new Todo("20", "description 20", android.R.drawable.checkbox_on_background));
 
 
 //        entries = getResources().getStringArray(android.R.array.phoneTypes);
@@ -62,12 +63,14 @@ public class TodoList extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String move = todos.get(position).toString();
                 String move1 = todos.get(position).getDescription().toString();
-//                int move2 = todos.get(position).getIconIndex();
+                int move2 = todos.get(position).getIconIndex();
                 TextView textname = (TextView) findViewById(R.id.rowTitle);
                 TextView textdes = (TextView) findViewById(R.id.rowDes);
+                ImageView icon = (ImageView) findViewById(R.id.imageView);
                 Intent I = new Intent(view.getContext(), MainActivity2.class);
                 I.putExtra("key1", move);
                 I.putExtra("key2", move1);
+                I.putExtra("key3", move2);
                 startActivity(I);
                 Toast.makeText(TodoList.this, parent.getAdapter().getItem(position).toString(), Toast.LENGTH_SHORT).show();
             }
