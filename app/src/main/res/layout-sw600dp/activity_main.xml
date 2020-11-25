@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Phone"
+        android:ems="10"
+        android:inputType="phone"
+        android:keepScreenOn="false"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="" />
+
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:keepScreenOn="false"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textName3"
+        android:layout_marginTop="27dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="                      "
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnClickHere3"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="14dp"
+        android:padding="20dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="300sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textName"
+        android:layout_marginTop="14dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="                      "
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnClickHere11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextMessage"
+        android:layout_centerInParent="false"
+        android:layout_marginLeft="264dp"
+        android:layout_marginTop="18dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Close"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#A54F4F"
+        android:textColorLink="#FFFFFF"
+        app:rippleColor="#9C4141" />
+
+    <Button
+        android:id="@+id/btnClickHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextMessage"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="19dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Next" />
+
+    <Button
+        android:id="@+id/btnClickHere3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnClickHere"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Count" />
+
+    <TextView
+        android:id="@+id/Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="Phone" />
+
+    <TextView
+        android:id="@+id/Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="Message" />
+</RelativeLayout>

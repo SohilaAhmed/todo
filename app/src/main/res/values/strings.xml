@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name" translatable="true">CS 426</string>
+    <string name="next">next</string>
+    <string name="close" translatable="true">close</string>
+    <string name="month" translatable="true">month</string>
+    <string name="year" translatable="true">year</string>
+    <string name="back" translatable="true">back</string>
+    <string name="count" translatable="true">count</string>
+    <string name="textview">TextView</string>
+</resources>

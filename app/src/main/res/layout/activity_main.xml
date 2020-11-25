@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Phone"
+        android:ems="10"
+        android:inputType="phone"
+        android:keepScreenOn="false"
+        android:text="" />
+
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:keepScreenOn="false"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textName3"
+        android:layout_marginTop="27dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="                      "
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textName3"
+        android:layout_width="131dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/btnClickHere3"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="22dp"
+        android:includeFontPadding="true"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="300sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform" />
+
+    <TextView
+        android:id="@+id/textName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textName"
+        android:layout_marginTop="14dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="                      "
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnClickHere11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextMessage"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="264dp"
+        android:layout_marginTop="14dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/close"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#A54F4F"
+        android:textColorLink="#FFFFFF"
+        app:rippleColor="#9C4141" />
+
+    <Button
+        android:id="@+id/btnClickHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextMessage"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="19dp"
+        android:onClick="doSomeThing"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/next" />
+
+    <Button
+        android:id="@+id/btnClickHere3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnClickHere"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/count" />
+
+    <TextView
+        android:id="@+id/Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:text="@string/year" />
+
+    <TextView
+        android:id="@+id/Message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:paddingRight="10dp"
+        android:text="@string/month" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">س 426</string>
+<!--    <string name="next">التالي</string>-->
+    <string name="close">اغلاق</string>
+    <string name="month">شهر</string>
+    <string name="year">سنة</string>
+    <string name="back">رجوع</string>
+    <string name="count">عد</string>
+</resources>
